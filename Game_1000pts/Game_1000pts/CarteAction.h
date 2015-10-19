@@ -2,11 +2,12 @@
 #define CARTEACTION_H
 
 
-class CarteAction
+class CarteAction : public Carte
 {
     public:
         CarteAction();
         virtual ~CarteAction();
+
 
         int getGroupe();
     protected:
