@@ -1,19 +1,18 @@
 #ifndef CARTEPOINT_H
 #define CARTEPOINT_H
 
+#include <string>
+#include <iostream>
+#include "Carte.h"
 
 class CartePoint : public Carte
 {
     public:
-        CartePoint();
+        CartePoint(int nbPts, int rang);
         virtual ~CartePoint();
-
-        ostream& operator <<( ostream &s , CartePoint const &c ) {
-        s << c.getRang() << " : +(" << c.getNbPoint << ")";
-        return s;
-        }
-
+        std::string toString();
         int getNbPoint();
+    
     private:
         int nbPoint;
 };

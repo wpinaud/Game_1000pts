@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		45BED3091BD4D69C006308C5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45BED3081BD4D69C006308C5 /* main.cpp */; };
+		45BED3171BD4EAAF006308C5 /* CartePoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45BED3121BD4EAAF006308C5 /* CartePoint.cpp */; settings = {ASSET_TAGS = (); }; };
+		45BED3181BD4EAAF006308C5 /* CarteAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45BED3141BD4EAAF006308C5 /* CarteAction.cpp */; settings = {ASSET_TAGS = (); }; };
+		45BED3191BD4EAAF006308C5 /* Carte.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45BED3161BD4EAAF006308C5 /* Carte.cpp */; settings = {ASSET_TAGS = (); }; };
+		45BED31C1BD4EAE4006308C5 /* LesCartes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45BED31A1BD4EAE4006308C5 /* LesCartes.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		45BED3051BD4D69C006308C5 /* Game_1000pts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Game_1000pts; sourceTree = BUILT_PRODUCTS_DIR; };
 		45BED3081BD4D69C006308C5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		45BED3111BD4EAAF006308C5 /* CartePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartePoint.h; sourceTree = "<group>"; };
+		45BED3121BD4EAAF006308C5 /* CartePoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CartePoint.cpp; sourceTree = "<group>"; };
+		45BED3131BD4EAAF006308C5 /* CarteAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarteAction.h; sourceTree = "<group>"; };
+		45BED3141BD4EAAF006308C5 /* CarteAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CarteAction.cpp; sourceTree = "<group>"; };
+		45BED3151BD4EAAF006308C5 /* Carte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Carte.h; sourceTree = "<group>"; };
+		45BED3161BD4EAAF006308C5 /* Carte.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Carte.cpp; sourceTree = "<group>"; };
+		45BED31A1BD4EAE4006308C5 /* LesCartes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LesCartes.cpp; sourceTree = "<group>"; };
+		45BED31B1BD4EAE4006308C5 /* LesCartes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LesCartes.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				45BED3081BD4D69C006308C5 /* main.cpp */,
+				45BED31A1BD4EAE4006308C5 /* LesCartes.cpp */,
+				45BED31B1BD4EAE4006308C5 /* LesCartes.hpp */,
+				45BED3111BD4EAAF006308C5 /* CartePoint.h */,
+				45BED3121BD4EAAF006308C5 /* CartePoint.cpp */,
+				45BED3131BD4EAAF006308C5 /* CarteAction.h */,
+				45BED3141BD4EAAF006308C5 /* CarteAction.cpp */,
+				45BED3151BD4EAAF006308C5 /* Carte.h */,
+				45BED3161BD4EAAF006308C5 /* Carte.cpp */,
 			);
 			path = Game_1000pts;
 			sourceTree = "<group>";
@@ -118,7 +138,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45BED31C1BD4EAE4006308C5 /* LesCartes.cpp in Sources */,
+				45BED3171BD4EAAF006308C5 /* CartePoint.cpp in Sources */,
+				45BED3191BD4EAAF006308C5 /* Carte.cpp in Sources */,
 				45BED3091BD4D69C006308C5 /* main.cpp in Sources */,
+				45BED3181BD4EAAF006308C5 /* CarteAction.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

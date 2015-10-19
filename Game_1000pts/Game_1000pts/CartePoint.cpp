@@ -1,8 +1,12 @@
 #include "CartePoint.h"
 
-CartePoint::CartePoint()
+CartePoint::CartePoint(int nbPts, int rang)
 {
-    //ctor
+    if ((nbPts==50) || (nbPts==100)){
+        nbPoint = nbPts;
+        this->rang = rang;
+    }
+    //lever une erreur si le nombre de points demandé n'est pas bon
 }
 
 CartePoint::~CartePoint()
@@ -10,6 +14,12 @@ CartePoint::~CartePoint()
     //dtor
 }
 
-int getNbPoint (){
+int CartePoint::getNbPoint (){
     return nbPoint;
+}
+
+std::string CartePoint::toString(){
+    std::stringstream s;
+    s << rang << " : +(" << nbPoint << ")";
+    return s.str();
 }
