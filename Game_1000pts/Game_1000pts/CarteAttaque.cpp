@@ -3,6 +3,8 @@
 CarteAttaque::CarteAttaque()
 {
     //ctor
+    this->groupe = groupe;
+    this->rang = rang;
 }
 
 CarteAttaque::~CarteAttaque()
@@ -12,4 +14,10 @@ CarteAttaque::~CarteAttaque()
 
 void bloqueJoueur (joueur a){
     a.setEtat(false);
+}
+
+std::string CartePoint::toString(){
+    std::stringstream s;
+    s << rang << " : (A)";
+    return s.str();
 }
