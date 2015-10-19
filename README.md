@@ -52,7 +52,21 @@ Si arrivé au bout des 73 cartes aucun des joueurs n’a atteint mille points le
 ``` Ecrire la m ́ethode permettant de distribuer les cartes : on suppose que celle-ci prend les 6 cartes du dessus de la pioche et les renvoie.```
 
 ##Les joueurs
+- Stock ses cartes
+- Stock son tas
+- Méthode abstraite permettant de choisir la carte à jouer à partir du tas de l'adversaire
+	+ Si la carte n'est pas compatible avec le tas du joueur ou celui de l'adversaire elle est défaussée
 
+Méthodes:
+- Calculer le score du joueur (en fonction de son tas)
+- Renvoyer la carte la plus haute du tas (= la carte jouée par l'adversaire)
+- Savoir si une carte est jouable sur un tas
+
+Stratégies:
+-  *Avancer le plus vite possible.* En cas de blocage, jouer la parade appropriee ou piocher jusqu’a la trouver
+-  *pourrir la vie de l’adversaire* : utiliser au maximum les attaques et avancer des que l’adversaire est bloque.
+
+```Ecrire la boucle principale du jeu en completant si necessaire les classes existantes```
 
 
 
