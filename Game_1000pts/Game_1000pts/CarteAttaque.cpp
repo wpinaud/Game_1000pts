@@ -1,6 +1,6 @@
 #include "CarteAttaque.h"
 
-CarteAttaque::CarteAttaque()
+CarteAttaque::CarteAttaque( int groupe, int rang)
 {
     //ctor
     this->groupe = groupe;
@@ -18,6 +18,6 @@ void bloqueJoueur (joueur a){
 
 std::string CartePoint::toString(){
     std::stringstream s;
-    s << rang << " : (A)";
+    s << rang << " : A(" << groupe << ")";
     return s.str();
 }

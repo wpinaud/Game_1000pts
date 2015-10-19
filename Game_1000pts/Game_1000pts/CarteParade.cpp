@@ -18,6 +18,6 @@ void libereJoueur (joueur a){
 
 std::string CartePoint::toString(){
     std::stringstream s;
-    s << rang << " : (P)";
+    s << rang << " : P(" << groupe << ")";
     return s.str();
 }
