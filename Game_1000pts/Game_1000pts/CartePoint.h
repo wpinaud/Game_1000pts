@@ -14,7 +14,7 @@ class CartePoint : public Carte
         std::string toString();
 
         int getNbPoint();
-    
+
     private:
         int nbPoint;
 };

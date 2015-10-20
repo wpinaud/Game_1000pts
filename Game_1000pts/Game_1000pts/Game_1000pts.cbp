@@ -38,6 +38,10 @@
 		<Unit filename="Carte.h" />
 		<Unit filename="CarteAction.cpp" />
 		<Unit filename="CarteAction.h" />
+		<Unit filename="CarteAttaque.cpp" />
+		<Unit filename="CarteAttaque.h" />
+		<Unit filename="CarteParade.cpp" />
+		<Unit filename="CarteParade.h" />
 		<Unit filename="CartePoint.cpp" />
 		<Unit filename="CartePoint.h" />
 		<Unit filename="main.cpp" />
