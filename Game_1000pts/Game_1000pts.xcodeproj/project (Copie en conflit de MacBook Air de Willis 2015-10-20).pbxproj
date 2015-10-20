@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45321E461BD69FEA00806778 /* CarteAttaque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45321E421BD69FEA00806778 /* CarteAttaque.cpp */; settings = {ASSET_TAGS = (); }; };
-		45321E471BD69FEA00806778 /* CarteParade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45321E441BD69FEA00806778 /* CarteParade.cpp */; settings = {ASSET_TAGS = (); }; };
 		459C2CA21BD555E400FA31CA /* Joueur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459C2CA01BD555E400FA31CA /* Joueur.cpp */; settings = {ASSET_TAGS = (); }; };
 		459C2CA51BD5591200FA31CA /* JoueurStrat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459C2CA31BD5591200FA31CA /* JoueurStrat.cpp */; settings = {ASSET_TAGS = (); }; };
 		459C2CA81BD5597000FA31CA /* JoueurPourrir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459C2CA61BD5597000FA31CA /* JoueurPourrir.cpp */; settings = {ASSET_TAGS = (); }; };
@@ -32,10 +30,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		45321E421BD69FEA00806778 /* CarteAttaque.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CarteAttaque.cpp; sourceTree = "<group>"; };
-		45321E431BD69FEA00806778 /* CarteAttaque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarteAttaque.h; sourceTree = "<group>"; };
-		45321E441BD69FEA00806778 /* CarteParade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CarteParade.cpp; sourceTree = "<group>"; };
-		45321E451BD69FEA00806778 /* CarteParade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarteParade.h; sourceTree = "<group>"; };
 		459C2CA01BD555E400FA31CA /* Joueur.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Joueur.cpp; sourceTree = "<group>"; };
 		459C2CA11BD555E400FA31CA /* Joueur.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Joueur.hpp; sourceTree = "<group>"; };
 		459C2CA31BD5591200FA31CA /* JoueurStrat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JoueurStrat.cpp; sourceTree = "<group>"; };
@@ -85,20 +79,16 @@
 			isa = PBXGroup;
 			children = (
 				45BED3081BD4D69C006308C5 /* main.cpp */,
+				45BED31A1BD4EAE4006308C5 /* LesCartes.cpp */,
+				45BED31B1BD4EAE4006308C5 /* LesCartes.hpp */,
 				459C2CA01BD555E400FA31CA /* Joueur.cpp */,
 				459C2CA11BD555E400FA31CA /* Joueur.hpp */,
 				459C2CA31BD5591200FA31CA /* JoueurStrat.cpp */,
 				459C2CA41BD5591200FA31CA /* JoueurStrat.hpp */,
 				459C2CA61BD5597000FA31CA /* JoueurPourrir.cpp */,
 				459C2CA71BD5597000FA31CA /* JoueurPourrir.hpp */,
-				45BED31A1BD4EAE4006308C5 /* LesCartes.cpp */,
-				45BED31B1BD4EAE4006308C5 /* LesCartes.hpp */,
 				45BED3111BD4EAAF006308C5 /* CartePoint.h */,
 				45BED3121BD4EAAF006308C5 /* CartePoint.cpp */,
-				45321E421BD69FEA00806778 /* CarteAttaque.cpp */,
-				45321E431BD69FEA00806778 /* CarteAttaque.h */,
-				45321E441BD69FEA00806778 /* CarteParade.cpp */,
-				45321E451BD69FEA00806778 /* CarteParade.h */,
 				45BED3131BD4EAAF006308C5 /* CarteAction.h */,
 				45BED3141BD4EAAF006308C5 /* CarteAction.cpp */,
 				45BED3151BD4EAAF006308C5 /* Carte.h */,
@@ -165,12 +155,10 @@
 			files = (
 				45BED31C1BD4EAE4006308C5 /* LesCartes.cpp in Sources */,
 				45BED3171BD4EAAF006308C5 /* CartePoint.cpp in Sources */,
-				45321E471BD69FEA00806778 /* CarteParade.cpp in Sources */,
 				45BED3191BD4EAAF006308C5 /* Carte.cpp in Sources */,
 				459C2CA51BD5591200FA31CA /* JoueurStrat.cpp in Sources */,
 				459C2CA21BD555E400FA31CA /* Joueur.cpp in Sources */,
 				45BED3091BD4D69C006308C5 /* main.cpp in Sources */,
-				45321E461BD69FEA00806778 /* CarteAttaque.cpp in Sources */,
 				45BED3181BD4EAAF006308C5 /* CarteAction.cpp in Sources */,
 				459C2CA81BD5597000FA31CA /* JoueurPourrir.cpp in Sources */,
 			);
@@ -259,6 +247,8 @@
 		45BED30D1BD4D69C006308C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -266,6 +256,8 @@
 		45BED30E1BD4D69C006308C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

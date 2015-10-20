@@ -8,24 +8,28 @@
 
 #ifndef LesCartes_hpp
 #define LesCartes_hpp
-#include "Carte.h"
-#include "CarteAction.h"
+
 #include "CartePoint.h"
+#include "CarteAttaque.h"
+#include "CarteParade.h"
 #include <stdlib.h>
-#include <vector>
+#include <algorithm>
+#include <time.h>        // std::time
+
 
 class LesCartes
 {
 private:
     int nbCartes;
-    std::vector<Carte> listeCartes;
+    
     
 public:
+    std::vector<Carte*> listeCartes; //to debug
+    
     LesCartes();
-    virtual ~LesCartes();
     void melanger();
-    std::vector<Carte> piocher();
-    std::vector<Carte> distribuer();
+    Carte* piocher();
+    std::vector<Carte*> distribuer();
     
 };
 

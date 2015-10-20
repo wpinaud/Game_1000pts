@@ -1,8 +1,11 @@
 #include "CarteAttaque.h"
 
-CarteAttaque::CarteAttaque()
+
+CarteAttaque::CarteAttaque( int groupe, int rang)
 {
     //ctor
+    this->groupe = groupe;
+    this->rang = rang;
 }
 
 CarteAttaque::~CarteAttaque()
@@ -10,6 +13,12 @@ CarteAttaque::~CarteAttaque()
     //dtor
 }
 
-void bloqueJoueur (joueur a){
-    a.setEtat(false);
+void CarteAttaque::bloqueJoueur (Joueur* a){
+    a->setEtat(false);
+}
+
+std::string CarteAttaque::toString(){
+    std::stringstream s;
+    s << rang << " : A(" << groupe << ")";
+    return s.str();
 }

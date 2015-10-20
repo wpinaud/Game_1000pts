@@ -1,7 +1,7 @@
 #include "CartePoint.h"
 
-CartePoint::CartePoint(int nbPts, int rang)
-{
+CartePoint::CartePoint(int nbPts, int rang){
+    
     if ((nbPts==50) || (nbPts==100)){
         nbPoint = nbPts;
         this->rang = rang;
@@ -20,6 +20,6 @@ int CartePoint::getNbPoint (){
 
 std::string CartePoint::toString(){
     std::stringstream s;
-    s << rang << " : +(" << nbPoint << ")";
+    s << rang << " : +(" << nbPoint << ")" ;
     return s.str();
 }

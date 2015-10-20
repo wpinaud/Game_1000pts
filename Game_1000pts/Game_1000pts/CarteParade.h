@@ -1,21 +1,15 @@
 #ifndef CARTEPARADE_H
 #define CARTEPARADE_H
+#include "CarteAction.h"
 
-
-class CarteParade
+class CarteParade : public CarteAction
 {
     public:
-        CarteParade();
+        CarteParade(int groupe, int rang);
         virtual ~CarteParade();
+        void libereJoueur (Joueur* a);
+        std::string toString();
 
-        ostream& operator<< ( ostream &s , CarteAttaque const &c ) {
-        s << c.getRang() << " : (P)";
-        return s;
-        }
-
-        void libereJoueur (joueur);
-    protected:
-    private:
 };
 
 #endif // CARTEPARADE_H

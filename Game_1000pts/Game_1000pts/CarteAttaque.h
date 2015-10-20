@@ -1,21 +1,16 @@
 #ifndef CARTEATTAQUE_H
 #define CARTEATTAQUE_H
 
+#include "CarteAction.h"
 
-class CarteAttaque
+class CarteAttaque : public CarteAction
 {
     public:
-        CarteAttaque();
+        CarteAttaque(int groupe, int rang);
         virtual ~CarteAttaque();
+        std::string toString();
+        void bloqueJoueur (Joueur* a);
 
-        ostream& operator<< ( ostream &s , CarteAttaque const &c ) {
-        s << c.getRang() << " : (A)";
-        return s;
-        }
-
-        void bloqueJoueur (joueur);
-    protected:
-    private:
 };
 
 #endif // CARTEATTAQUE_H

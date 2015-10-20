@@ -3,22 +3,28 @@
 
 #include <string>
 #include <ostream>
+#include <stdio.h>
+#include <vector>
+#include <sstream>
+
 
 class Carte
 {
     public:
+    
         virtual ~Carte();
-        virtual std::string toString() = 0;
+        virtual std::string toString()=0;
         int getRang ();
+    
+        Carte() : id(++currentId) {}
+        int id;
+        static int currentId;
 
     protected:
         int rang;
 
 };
 
-std::ostream& operator <<( std::ostream &s , Carte &c ) {
-    s << c.toString();
-    return s;
-}
+
 
 #endif // CARTE_H

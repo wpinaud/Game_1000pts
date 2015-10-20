@@ -1,13 +1,13 @@
 #ifndef CARTEACTION_H
 #define CARTEACTION_H
 
+#include "Carte.h"
+#include "Joueur.hpp"
 
 class CarteAction : public Carte
 {
     public:
-        CarteAction();
         virtual ~CarteAction();
-
 
         int getGroupe();
     protected:
