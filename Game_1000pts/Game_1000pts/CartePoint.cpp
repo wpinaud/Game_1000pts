@@ -1,8 +1,12 @@
 #include "CartePoint.h"
 
+<<<<<<< HEAD
 CartePoint::CartePoint(int nbPts, int rang){
     
     if ((nbPts==50) || (nbPts==100)){
+=======
+CarteParade    if ((nbPts==50) || (nbPts==100)){
+>>>>>>> origin/master
         nbPoint = nbPts;
         this->rang = rang;
     }

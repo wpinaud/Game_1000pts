@@ -9,6 +9,10 @@
 #ifndef JoueurPourrir_hpp
 #define JoueurPourrir_hpp
 
+<<<<<<< HEAD
+=======
+#include <stdio.h>
+>>>>>>> origin/master
 #include "Joueur.hpp"
 
 class JoueurPourrir : Joueur

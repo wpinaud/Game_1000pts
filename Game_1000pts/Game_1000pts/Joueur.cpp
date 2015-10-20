@@ -14,8 +14,13 @@ int Joueur::score(){
     return score;
 }
 
+<<<<<<< HEAD
 Carte* Joueur::getFirstOnDeck(){
     return tas[0]; //Vérfier que c'est bien le premier élement
+=======
+Carte Joueur::getFirstOnDeck(){
+    return *tas[0]; //Vérfier que c'est bien le premier élement
+>>>>>>> origin/master
 }
 
 bool Joueur::estJouable(Carte* carte){
@@ -23,6 +28,9 @@ bool Joueur::estJouable(Carte* carte){
     return true;
 }
 
+<<<<<<< HEAD
 void Joueur::setEtat(bool etat){
     this->etat = etat;
 }
+=======
+>>>>>>> origin/master
