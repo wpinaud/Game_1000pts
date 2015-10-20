@@ -1,10 +1,6 @@
 #ifndef CARTEPOINT_H
 #define CARTEPOINT_H
 
-<<<<<<< HEAD
-=======
-#include <string>
->>>>>>> origin/master
 #include "Carte.h"
 #include <sstream>
 

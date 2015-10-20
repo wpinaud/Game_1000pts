@@ -20,17 +20,12 @@
 =======
 #include <vector>
 #include <algorithm>
->>>>>>> origin/master
+
 
 class LesCartes
 {
 private:
     int nbCartes;
-<<<<<<< HEAD
-    
-=======
-    std::vector<Carte*> listeCartes;
->>>>>>> origin/master
     
 public:
     std::vector<Carte*> listeCartes; //to debug

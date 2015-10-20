@@ -10,14 +10,6 @@ class CarteParade : public CarteAction
         void libereJoueur (Joueur* a);
         std::string toString();
 
-<<<<<<< HEAD
-=======
-        std::string toString();
-
-        void libereJoueur (joueur);
-    protected:
-    private:
->>>>>>> origin/master
 };
 
 #endif // CARTEPARADE_H

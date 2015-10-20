@@ -9,10 +9,6 @@
 #ifndef JoueurStrat_hpp
 #define JoueurStrat_hpp
 
-<<<<<<< HEAD
-=======
-#include <stdio.h>
->>>>>>> origin/master
 #include "Joueur.hpp"
 
 class JoueurStrat : Joueur
