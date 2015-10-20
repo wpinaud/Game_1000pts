@@ -13,19 +13,20 @@
 #include "CartePoint.h"
 #include <stdlib.h>
 #include <vector>
+#include <algorithm>
 
 class LesCartes
 {
 private:
     int nbCartes;
-    std::vector<Carte> listeCartes;
+    std::vector<Carte*> listeCartes;
     
 public:
     LesCartes();
     virtual ~LesCartes();
     void melanger();
-    std::vector<Carte> piocher();
-    std::vector<Carte> distribuer();
+    Carte* piocher();
+    std::vector<Carte*> distribuer();
     
 };
 
