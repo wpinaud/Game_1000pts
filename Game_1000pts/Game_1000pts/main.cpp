@@ -2,13 +2,14 @@
 #include "LesCartes.hpp"
 #include "Joueur.hpp"
 #include <exception>
+#include <typeinfo>
 using namespace std;
 
 int Carte::currentId = 1;
 
 void impr(Carte* carte){
     try {
-        cout << carte->toString() << endl;
+        cout << typeid(*carte).name() << endl;
     } catch (exception &e) {
         cerr << e.what();
     }
@@ -22,14 +23,26 @@ int main()
 //    fill_n(lesCartes.begin(), 29, new CartePoint(50, ++i));
 //    fill_n(lesCartes.begin()+29, 16, new CartePoint(100, ++i));
 //    fill_n(lesCartes.begin()+45, 72-46, new CartePoint(50, ++i));
+<<<<<<< Updated upstream
 
     //lesCartes.melanger();
 
+=======
+    
+    //lesCartes.melanger();
+    
+>>>>>>> Stashed changes
     //for_each(lesCartes.listeCartes.begin(), lesCartes.listeCartes.begin()+1, impr);
     //J1.setMain(lesCartes.distribuer());
     //std::fill(mesCartes.begin(), mesCartes.begin()+6, lesCartes.piocher());
+<<<<<<< Updated upstream
 
     for_each(lesCartes.listeCartes.begin(), lesCartes.listeCartes.end(), impr);
 
+=======
+    
+    for_each(lesCartes.listeCartes.begin(), lesCartes.listeCartes.end(), impr);
+    
+>>>>>>> Stashed changes
     return 0;
 }

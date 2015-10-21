@@ -61,6 +61,11 @@ Carte* LesCartes::piocher(){
 
 std::vector<Carte*> LesCartes::distribuer(){
     std::vector<Carte*> carteDistrib;
+<<<<<<< Updated upstream
+=======
+    //if (sizeof(listeCartes)>5) {
+        //std::generate(carteDistrib.begin(), carteDistrib.end(), LesCartes::piocher);
+>>>>>>> Stashed changes
         for (int i=0; i<6; i++) {
             carteDistrib.push_back(listeCartes[0]);
             listeCartes.erase(listeCartes.begin());

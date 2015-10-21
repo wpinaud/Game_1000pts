@@ -259,6 +259,7 @@
 		45BED30D1BD4D69C006308C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -266,6 +267,7 @@
 		45BED30E1BD4D69C006308C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
