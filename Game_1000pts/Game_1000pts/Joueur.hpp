@@ -21,9 +21,10 @@ public:
     Carte* getFirstOnDeck();
     bool estJouable(Carte* carte);
     void setEtat(bool etat);
+    void setMain(std::vector<Carte*> cartes){ main = cartes; }
     
 protected:
-    std::vector<Carte*> cartes;
+    std::vector<Carte*> main;
     std::vector<Carte*> tas;
     bool etat;
 };

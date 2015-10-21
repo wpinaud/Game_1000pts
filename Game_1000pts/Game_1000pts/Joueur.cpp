@@ -11,6 +11,8 @@
 int Joueur::score(){
     int score;
     //Parcourir le tas et additionner le score de toutes les cartes points
+    //std::add(tas.begin(),tas.end(),add_score)
+    //fonction add score: carte.getPoint()
     return score;
 }
 

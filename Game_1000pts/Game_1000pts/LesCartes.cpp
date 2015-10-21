@@ -9,7 +9,7 @@
 #include "LesCartes.hpp"
 
 
-
+#include <iostream>
 
 //Initialiser le jeu de carte
 /*73 cartes:
@@ -19,8 +19,7 @@
  * 3 exemplaires de la carte attaque
  * 6 exemplaires de la carte parade*/
 LesCartes::LesCartes(){
-<<<<<<< HEAD
-     std::vector<Carte*> listeC(72);
+    std::vector<Carte*> listeC(72);
     //Ajouter un truc qui itere pour le rang des cartes
     generate(listeC.begin(), listeC.begin()+29, []() {return (new CartePoint(50, Carte::currentId));});
     generate(listeC.begin()+29, listeC.begin()+45, []() {return (new CartePoint(100, Carte::currentId));});
@@ -52,7 +51,7 @@ Carte* LesCartes::piocher(){
     if (sizeof(listeCartes)>0) {
         Carte* cartePioche;
         cartePioche = listeCartes[0];
-        listeCartes.pop_back(); //vérfier quel élément est enlevé
+        listeCartes.erase(listeCartes.begin());
         return cartePioche;
     }
     else {
@@ -61,7 +60,18 @@ Carte* LesCartes::piocher(){
 }
 
 std::vector<Carte*> LesCartes::distribuer(){
-    std::vector<Carte*> carteDistrib(6);
-    std::fill(carteDistrib.begin(), carteDistrib.end(), piocher());
-    return carteDistrib;
-}
+    std::vector<Carte*> carteDistrib;
+    //if (sizeof(listeCartes)>5) {
+        //std::generate(carteDistrib.begin(), carteDistrib.end(), piocher);
+        for (int i=0; i<6; i++) {
+            carteDistrib.push_back(listeCartes[0]);
+            listeCartes.erase(listeCartes.begin());
+        }
+    
+        return carteDistrib;
+//    }
+//    else{
+//        throw "PiocheVideException";
+//    }
+    
+    }
