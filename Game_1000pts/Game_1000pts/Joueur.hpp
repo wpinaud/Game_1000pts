@@ -9,7 +9,7 @@
 #ifndef Joueur_hpp
 #define Joueur_hpp
 
-#include "Carte.h"
+#include "CartePoint.h"
 
 class Joueur
 {

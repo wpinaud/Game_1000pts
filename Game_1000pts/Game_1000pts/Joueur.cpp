@@ -62,4 +62,5 @@ bool Joueur::estJouable(Carte* carte, Carte* carteAdv){
             return true;
         }
     }
+    return false;
 }
