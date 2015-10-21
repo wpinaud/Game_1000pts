@@ -19,6 +19,7 @@ class Carte
         Carte() : id(++currentId) {}
         int id;
         static int currentId;
+    virtual int getGroupe()=0;
 
     protected:
         int rang;

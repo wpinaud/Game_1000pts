@@ -25,7 +25,7 @@ private:
     
 public:
     std::vector<Carte*> listeCartes; //to debug
-    
+    std::vector<Carte*> defausse;
     LesCartes();
     void melanger();
     Carte* piocher();

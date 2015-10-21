@@ -11,12 +11,13 @@
 
 #include "CartePoint.h"
 
+
 class Joueur
 {
 public:
 
     //une methode abstraite permettant de choisir la carte a jouer a partir du tas de l’adversaire
-    void choisirCarte(Carte* tasAdv){};
+    virtual void choisirCarte(std::vector<Carte*> tasAdv, std::vector<Carte*> defausse)=0;
     int score();
     Carte* getFirstOnDeck();
     bool estJouable(Carte* carte, Carte* carteAdv);

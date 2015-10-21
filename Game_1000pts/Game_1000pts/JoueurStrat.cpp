@@ -8,7 +8,29 @@
 
 #include "JoueurStrat.hpp"
 /*Avancer le plus vite possible.* En cas de blocage, jouer la parade appropriee ou piocher jusqu’a la trouver*/
-void JoueurStrat::choisirCarte(std::vector<Carte*> tasAdv){
+void JoueurStrat::choisirCarte(std::vector<Carte*> tasAdv, std::vector<Carte*> defausse){
+    
+    if (tasAdv.back()->getType() == "Attaque") {
+        for (int i=0; i<main.size(); i++) {
+            if ((main.at(i)->getType() == "Parade") && (main.at(i)->getGroupe() == tasAdv.back()->getGroupe())) {
+                tasAdv.push_back(main.at(i));
+            }
+            else{
+                break;
+            }
+        }
+        
+    }
+    else if ((std::count_if(main.begin(), main.end(), [](Carte* carte){return (carte->getType()=="Point");}))&&(tasAdv.back()->getType() != "Attaque" )){
+        for (int i=0; i<main.size(); i++) {
+            if (main.at(i)->getType() == "Point"){
+                tas.push_back(main.at(i)); //retourne la premiere carte point trouvée
+            }
+        }
+    }
+    else{
+        defausse.push_back(main.at(1));
+    }
     //if 1ere carte du tas est une attaque
         //if parade dans la main avec groupe(carteparade) == groupe(carteattaque)
         //else défausser

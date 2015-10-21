@@ -11,10 +11,10 @@
 
 #include "Joueur.hpp"
 
-class JoueurStrat : Joueur
+class JoueurStrat : public Joueur
 {
 public:
-    void choisirCarte(std::vector<Carte*> tasAdv);
+    void choisirCarte(std::vector<Carte*> tasAdv, std::vector<Carte*> defausse);
 };
 
 #endif /* JoueurStrat_hpp */

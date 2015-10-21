@@ -1,6 +1,7 @@
 #include <iostream>
 #include "LesCartes.hpp"
-#include "Joueur.hpp"
+#include "JoueurStrat.hpp"
+#include "JoueurPourrir.hpp"
 #include <exception>
 #include <typeinfo>
 using namespace std;
@@ -21,8 +22,8 @@ int main()
 {
 
     LesCartes lesCartes;
-    Joueur J1;
-    Joueur J2;
+    JoueurStrat J1;
+    JoueurPourrir J2;
 //    fill_n(lesCartes.begin(), 29, new CartePoint(50, ++i));
 //    fill_n(lesCartes.begin()+29, 16, new CartePoint(100, ++i));
 //    fill_n(lesCartes.begin()+45, 72-46, new CartePoint(50, ++i));
