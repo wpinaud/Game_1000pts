@@ -9,7 +9,7 @@ class CartePoint : public Carte
     public:
         CartePoint(int nbPts, int rang);
         virtual ~CartePoint();
-
+        std::string getType() const{return "Point";}
         std::string toString() const;
 
         int getNbPoint();

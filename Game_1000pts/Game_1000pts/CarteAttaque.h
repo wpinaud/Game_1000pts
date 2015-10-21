@@ -8,7 +8,7 @@ class CarteAttaque : public CarteAction
 {
     public:
         CarteAttaque(int groupe, int rang);
-
+        std::string getType() const{return "Attaque";}
         virtual ~CarteAttaque();
         std::string toString() const;
 

@@ -7,6 +7,7 @@ class CarteParade : public CarteAction
     public:
         CarteParade(int groupe, int rang);
         virtual ~CarteParade();
+        std::string getType() const{return "Parade";}
         std::string toString() const;
 
 };

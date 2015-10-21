@@ -19,7 +19,7 @@ public:
     void choisirCarte(Carte* tasAdv){};
     int score();
     Carte* getFirstOnDeck();
-    bool estJouable(Carte* carte, Carte* tasAdv);
+    bool estJouable(Carte* carte, Carte* carteAdv);
     void setMain(std::vector<Carte*> cartes){ main = cartes; }
 
 protected:

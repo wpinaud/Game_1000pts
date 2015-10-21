@@ -20,11 +20,12 @@ Carte* Joueur::getFirstOnDeck(){
     return tas.back(); //Vérfier que c'est bien le premier élement
 }
 
-bool Joueur::estJouable(Carte* carte, Carte* tasAdv){
-<<<<<<< HEAD
+bool Joueur::estJouable(Carte* carte, Carte* carteAdv){
+    std::string monTypeDeCarte = carte.getType();
+    std::string typeCarteAdv = carteAdv.getType();
     //la carte donnée est une carte point
     // et la première carte de mon tas est une point ou une parade
-    if (carte == "point"){
+    if (monTypeDeCarte == "Point"){
         if (getFirstOnDeck() == "point" || getFirstOnDeck() == "P"){
             return true;
         }
@@ -53,8 +54,4 @@ bool Joueur::estJouable(Carte* carte, Carte* tasAdv){
             return true;
         }
     }
-=======
-    //Si la premiere carte est pas compatible elle n'est pas jouable
-    return true;
->>>>>>> origin/master
 }
