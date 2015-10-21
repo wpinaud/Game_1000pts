@@ -34,9 +34,9 @@ int main()
     J1.setMain(lesCartes.distribuer());
     J2.setMain(lesCartes.distribuer());
     //std::fill(mesCartes.begin(), mesCartes.begin()+6, lesCartes.piocher());
+    cout << J1.estJouable(J1.getFirstOnDeck(), J1.getFirstOnDeck());
 
-
-    for_each(lesCartes.listeCartes.begin(), lesCartes.listeCartes.end(), impr);
+    //for_each(lesCartes.listeCartes.begin(), lesCartes.listeCartes.end(), impr);
 
 
     return 0;
