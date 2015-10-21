@@ -29,7 +29,6 @@ Carte* Joueur::getFirstOnDeck(){
 bool Joueur::estJouable(Carte* carte, Carte* carteAdv){
     std::string monTypeDeCarte = carte->getType();
     std::string typeCarteAdv = carteAdv->getType();
-
     std::string maPremiereCarte = getFirstOnDeck()->getType();
     //la carte donnée est une carte point
     // et la première carte de mon tas est une point ou une parade
