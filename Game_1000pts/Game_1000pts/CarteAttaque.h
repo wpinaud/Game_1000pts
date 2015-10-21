@@ -1,8 +1,8 @@
 #ifndef CARTEATTAQUE_H
 #define CARTEATTAQUE_H
-#include "CarteAction.h"
 
 #include "CarteAction.h"
+
 
 class CarteAttaque : public CarteAction
 {

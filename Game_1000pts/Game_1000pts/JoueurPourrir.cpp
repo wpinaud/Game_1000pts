@@ -13,6 +13,8 @@ void JoueurPourrir::choisirCarte(std::vector<Carte*> tasAdv, std::vector<Carte*>
     for (int i=0; i<main.size(); i++){ //on essaie de jouer une parade, car c'est la priorité.
         if (estJouable(main.at(i), tasAdv.back()) && main.at(i)->getType() == "Parade" && tag){
                 tas.push_back(main.at(i));
+                iter_swap(main.begin() + i, main.end());
+                main.pop_back();
                 tag = false;
         }
     }
@@ -20,6 +22,8 @@ void JoueurPourrir::choisirCarte(std::vector<Carte*> tasAdv, std::vector<Carte*>
         for (int i=0; i<main.size(); i++){
             if (estJouable(main.at(i), tasAdv.back()) && main.at(i)->getType() == "Attaque" && tag){
                 tasAdv.push_back(main.at(i));
+                iter_swap(main.begin() + i, main.end());
+                main.pop_back();
                 tag = false;
             }
         }
@@ -28,6 +32,8 @@ void JoueurPourrir::choisirCarte(std::vector<Carte*> tasAdv, std::vector<Carte*>
          for (int i=0; i<main.size(); i++){
             if (estJouable(main.at(i), tasAdv.back()) && main.at(i)->getType() == "Point" && tag){
             tas.push_back(main.at(i));
+                iter_swap(main.begin() + i, main.end());
+                main.pop_back();
             tag = false;
             }
         }
@@ -36,6 +42,8 @@ void JoueurPourrir::choisirCarte(std::vector<Carte*> tasAdv, std::vector<Carte*>
         for (int i=0; i<main.size(); i++){
             if (main.at(i)->getType() == "Point"){
                 defausse.push_back(main.at(i));
+                iter_swap(main.begin() + i, main.end());
+                main.pop_back();
             }
         }
 

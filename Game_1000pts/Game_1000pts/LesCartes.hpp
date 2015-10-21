@@ -9,13 +9,12 @@
 #ifndef LesCartes_hpp
 #define LesCartes_hpp
 
-#include "CartePoint.h"
-#include "CarteAttaque.h"
-#include "CarteParade.h"
 #include <stdlib.h>
 #include <algorithm>
 #include <time.h>        // std::time
-
+#include "CartePoint.h"
+#include "CarteAttaque.h"
+#include "CarteParade.h"
 
 
 class LesCartes
