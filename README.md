@@ -28,12 +28,14 @@ Si arrivé au bout des 73 cartes aucun des joueurs n’a atteint mille points le
 
 ##Structures de données
 ###Diagramme UML
+***Premiere version***
+![](uml.png)
 
 ###Code et explication
 
 
 ##Cartes *point*
-- Nombre de point initialisé par le constructeur
+- Nombre de points initialisé par le constructeur
 - Surcharge de << pour utiliser cout: ```x : +(y)``` avec x le numéro de la carte et y son nombre de points.
 
 La classe Carte Point hérite de la classe Carte. Elle a en plus l'attribut nombre de point, qui vaut 0, 50, ou 100. 
