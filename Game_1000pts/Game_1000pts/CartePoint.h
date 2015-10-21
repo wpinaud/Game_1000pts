@@ -10,7 +10,7 @@ class CartePoint : public Carte
         CartePoint(int nbPts, int rang);
         virtual ~CartePoint();
 
-        std::string toString();
+        std::string toString() const;
 
         int getNbPoint();
 

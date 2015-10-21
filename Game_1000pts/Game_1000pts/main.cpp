@@ -22,14 +22,14 @@ int main()
 //    fill_n(lesCartes.begin(), 29, new CartePoint(50, ++i));
 //    fill_n(lesCartes.begin()+29, 16, new CartePoint(100, ++i));
 //    fill_n(lesCartes.begin()+45, 72-46, new CartePoint(50, ++i));
-    
-    lesCartes.melanger();
-    
+
+    //lesCartes.melanger();
+
     //for_each(lesCartes.listeCartes.begin(), lesCartes.listeCartes.begin()+1, impr);
-    J1.setMain(lesCartes.distribuer());
+    //J1.setMain(lesCartes.distribuer());
     //std::fill(mesCartes.begin(), mesCartes.begin()+6, lesCartes.piocher());
 
-    //for_each(mesCartes.begin(), mesCartes.end(), impr);
-    
+    for_each(lesCartes.listeCartes.begin(), lesCartes.listeCartes.end(), impr);
+
     return 0;
 }

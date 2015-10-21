@@ -7,8 +7,7 @@ class CarteParade : public CarteAction
     public:
         CarteParade(int groupe, int rang);
         virtual ~CarteParade();
-        void libereJoueur (Joueur* a);
-        std::string toString();
+        std::string toString() const;
 
 };
 

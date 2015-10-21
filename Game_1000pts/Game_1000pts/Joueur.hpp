@@ -16,17 +16,15 @@ class Joueur
 public:
 
     //une methode abstraite permettant de choisir la carte a jouer a partir du tas de l’adversaire
-    void choisirCarte(std::vector<Carte*> tasAdv){};
+    void choisirCarte(Carte* tasAdv){};
     int score();
     Carte* getFirstOnDeck();
-    bool estJouable(Carte* carte);
-    void setEtat(bool etat);
+    bool estJouable(Carte* carte, Carte* tasAdv);
     void setMain(std::vector<Carte*> cartes){ main = cartes; }
-    
+
 protected:
     std::vector<Carte*> main;
     std::vector<Carte*> tas;
-    bool etat;
 };
 
 #endif /* Joueur_hpp */

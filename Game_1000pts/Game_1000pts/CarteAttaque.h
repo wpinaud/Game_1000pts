@@ -10,8 +10,7 @@ class CarteAttaque : public CarteAction
         CarteAttaque(int groupe, int rang);
 
         virtual ~CarteAttaque();
-        std::string toString();
-        void bloqueJoueur (Joueur* a);
+        std::string toString() const;
 
 };
 

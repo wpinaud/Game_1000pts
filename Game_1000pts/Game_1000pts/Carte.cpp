@@ -9,7 +9,7 @@ int Carte::getRang(){
     return rang;
 }
 
-std::ostream& operator <<( std::ostream &s , Carte &c ) {
+std::ostream& operator <<( std::ostream &s , const Carte &c ) {
     s << c.toString();
     return s;
 }

@@ -11,11 +11,11 @@
 class Carte
 {
     public:
-    
+
         virtual ~Carte();
-        virtual std::string toString()=0;
+        virtual std::string toString() const=0;
         int getRang ();
-    
+
         Carte() : id(++currentId) {}
         int id;
         static int currentId;

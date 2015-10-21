@@ -17,14 +17,10 @@ int Joueur::score(){
 }
 
 Carte* Joueur::getFirstOnDeck(){
-    return tas[0]; //Vérfier que c'est bien le premier élement
+    return tas[tas.end()]; //Vérfier que c'est bien le premier élement
 }
 
 bool Joueur::estJouable(Carte* carte){
     //Si la premiere carte est pas compatible elle n'est pas jouable
     return true;
-}
-
-void Joueur::setEtat(bool etat){
-    this->etat = etat;
 }

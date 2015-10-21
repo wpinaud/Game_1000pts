@@ -23,21 +23,21 @@ LesCartes::LesCartes(){
     //Ajouter un truc qui itere pour le rang des cartes
     generate(listeC.begin(), listeC.begin()+29, []() {return (new CartePoint(50, Carte::currentId));});
     generate(listeC.begin()+29, listeC.begin()+45, []() {return (new CartePoint(100, Carte::currentId));});
-    
+
     generate(listeC.begin()+45, listeC.begin()+48, []() {return (new CarteAttaque(0, Carte::currentId));});
     generate(listeC.begin()+48, listeC.begin()+51, []() {return (new CarteAttaque(1, Carte::currentId));});
     generate(listeC.begin()+51, listeC.begin()+54, []() {return (new CarteAttaque(2, Carte::currentId));});
-    
+
     generate(listeC.begin()+54, listeC.begin()+60, []() {return (new CarteParade(0, Carte::currentId));});
     generate(listeC.begin()+60, listeC.begin()+66, []() {return (new CarteParade(1, Carte::currentId));});
     generate(listeC.begin()+66, listeC.begin()+72, []() {return (new CarteParade(2, Carte::currentId));});
-    
+
     listeCartes = listeC;
 }
 
 // random generator function:
 int myrandom (int i) {
-    std::srand(std::time(NULL));
+    std::srand(time(NULL));
     return std::rand()%i;
 }
 
@@ -61,17 +61,11 @@ Carte* LesCartes::piocher(){
 
 std::vector<Carte*> LesCartes::distribuer(){
     std::vector<Carte*> carteDistrib;
-    //if (sizeof(listeCartes)>5) {
-        //std::generate(carteDistrib.begin(), carteDistrib.end(), piocher);
         for (int i=0; i<6; i++) {
             carteDistrib.push_back(listeCartes[0]);
             listeCartes.erase(listeCartes.begin());
         }
-    
+
         return carteDistrib;
-//    }
-//    else{
-//        throw "PiocheVideException";
-//    }
-    
+
     }

@@ -12,11 +12,7 @@ CarteParade::~CarteParade()
     //dtor
 }
 
-void CarteParade::libereJoueur (Joueur* a){
-    a->setEtat(true);
-}
-
-std::string CarteParade::toString(){
+std::string CarteParade::toString() const {
     std::stringstream s;
     s << rang << " : P(" << groupe << ")";
     return s.str();

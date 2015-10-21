@@ -10,7 +10,6 @@ class CarteAction : public Carte
 {
     public:
         virtual ~CarteAction();
-
         int getGroupe();
     protected:
         int groupe;

@@ -13,11 +13,7 @@ CarteAttaque::~CarteAttaque()
     //dtor
 }
 
-void CarteAttaque::bloqueJoueur (Joueur* a){
-    a->setEtat(false);
-}
-
-std::string CarteAttaque::toString(){
+std::string CarteAttaque::toString() const {
     std::stringstream s;
     s << rang << " : A(" << groupe << ")";
     return s.str();
