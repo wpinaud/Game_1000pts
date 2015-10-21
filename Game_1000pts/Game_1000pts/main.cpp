@@ -9,7 +9,9 @@ int Carte::currentId = 1;
 
 void impr(Carte* carte){
     try {
-        cout << typeid(*carte).name() << endl;
+        std::string pts = "Attaque";
+        std::string type = typeid(*carte).name();
+        cout << type.find(pts) << endl;
     } catch (exception &e) {
         cerr << e.what();
     }
