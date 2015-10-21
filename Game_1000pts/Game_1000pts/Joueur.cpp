@@ -20,7 +20,7 @@ Carte* Joueur::getFirstOnDeck(){
     if (tas.size()>0){
         return tas.back();
     }
-    else{
+    else{ //permettre au joueur de poser une carte sur son tas lorsque le tas est vide
         Carte* carteNulle = new CartePoint(0, 9999);
         return carteNulle;
     }
@@ -55,12 +55,10 @@ bool Joueur::estJouable(Carte* carte, Carte* carteAdv){
     //La carte donnée est une carte parade
     // et la première carte de mon tas est une point ou une parade
     if (monTypeDeCarte == "Parade"){
-        if (maPremiereCarte == "Point" || maPremiereCarte == "Parade"){
-            return false;
-        }
-        else{ // et la première carte de mon tas est une attaque
+        if (maPremiereCarte == "Attaque" && getFirstOnDeck()->getGroupe() == carte->getGroupe()){
             return true;
         }
+        else {return false;}
     }
     return false;
 }

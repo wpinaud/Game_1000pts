@@ -22,15 +22,20 @@ class LesCartes
 {
 private:
     int nbCartes;
-    
+
 public:
+<<<<<<< HEAD
     std::vector<Carte*> listeCartes; //to debug
     std::vector<Carte*> defausse;
+=======
+    std::vector<Carte*> listeCartes;
+
+>>>>>>> origin/master
     LesCartes();
     void melanger();
     Carte* piocher();
     std::vector<Carte*> distribuer();
-    
+
 };
 
 

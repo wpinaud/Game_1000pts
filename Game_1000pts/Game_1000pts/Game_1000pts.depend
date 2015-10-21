@@ -18,8 +18,8 @@
 	"Carte.h"
 	"Joueur.hpp"
 
-1445412196 z:\game_1000pts\game_1000pts\game_1000pts\joueur.hpp
-	"Carte.h"
+1445413100 z:\game_1000pts\game_1000pts\game_1000pts\joueur.hpp
+	"CartePoint.h"
 
 1445408594 source:z:\game_1000pts\game_1000pts\game_1000pts\carteattaque.cpp
 	"CarteAttaque.h"
