@@ -2,7 +2,7 @@
 
 CartePoint::CartePoint(int nbPts, int rang){
 
-    if ((nbPts==50) || (nbPts==100)){
+    if ((nbPts==50) || (nbPts==100) || (nbPts == 0)){
         nbPoint = nbPts;
         this->rang = rang;
     }

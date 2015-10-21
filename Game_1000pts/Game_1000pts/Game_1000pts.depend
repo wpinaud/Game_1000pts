@@ -2,7 +2,7 @@
 1445408457 source:z:\game_1000pts\game_1000pts\game_1000pts\carte.cpp
 	"Carte.h"
 
-1445408709 z:\game_1000pts\game_1000pts\game_1000pts\carte.h
+1445411992 z:\game_1000pts\game_1000pts\game_1000pts\carte.h
 	<string>
 	<ostream>
 	<stdio.h>
@@ -18,30 +18,30 @@
 	"Carte.h"
 	"Joueur.hpp"
 
-1445409921 z:\game_1000pts\game_1000pts\game_1000pts\joueur.hpp
+1445412196 z:\game_1000pts\game_1000pts\game_1000pts\joueur.hpp
 	"Carte.h"
 
 1445408594 source:z:\game_1000pts\game_1000pts\game_1000pts\carteattaque.cpp
 	"CarteAttaque.h"
 
-1445408537 z:\game_1000pts\game_1000pts\game_1000pts\carteattaque.h
+1445412054 z:\game_1000pts\game_1000pts\game_1000pts\carteattaque.h
 	"CarteAction.h"
 	"CarteAction.h"
 
 1445408594 source:z:\game_1000pts\game_1000pts\game_1000pts\carteparade.cpp
 	"CarteParade.h"
 
-1445408594 z:\game_1000pts\game_1000pts\game_1000pts\carteparade.h
+1445412063 z:\game_1000pts\game_1000pts\game_1000pts\carteparade.h
 	"CarteAction.h"
 
-1445408594 source:z:\game_1000pts\game_1000pts\game_1000pts\cartepoint.cpp
+1445412838 source:z:\game_1000pts\game_1000pts\game_1000pts\cartepoint.cpp
 	"CartePoint.h"
 
-1445408594 z:\game_1000pts\game_1000pts\game_1000pts\cartepoint.h
+1445412073 z:\game_1000pts\game_1000pts\game_1000pts\cartepoint.h
 	"Carte.h"
 	<sstream>
 
-1445407843 source:z:\game_1000pts\game_1000pts\game_1000pts\joueur.cpp
+1445412430 source:z:\game_1000pts\game_1000pts\game_1000pts\joueur.cpp
 	"Joueur.hpp"
 
 1445407588 source:z:\game_1000pts\game_1000pts\game_1000pts\joueurpourrir.cpp
@@ -56,11 +56,12 @@
 1445407588 z:\game_1000pts\game_1000pts\game_1000pts\joueurstrat.hpp
 	"Joueur.hpp"
 
-1445409322 source:z:\game_1000pts\game_1000pts\game_1000pts\main.cpp
+1445412491 source:z:\game_1000pts\game_1000pts\game_1000pts\main.cpp
 	<iostream>
 	"LesCartes.hpp"
 	"Joueur.hpp"
 	<exception>
+	<typeinfo>
 
 1445407588 z:\game_1000pts\game_1000pts\game_1000pts\lescartes.hpp
 	"CartePoint.h"
@@ -70,7 +71,7 @@
 	<algorithm>
 	<time.h>
 
-1445409245 source:z:\game_1000pts\game_1000pts\game_1000pts\lescartes.cpp
+1445411573 source:z:\game_1000pts\game_1000pts\game_1000pts\lescartes.cpp
 	"LesCartes.hpp"
 	<iostream>
 

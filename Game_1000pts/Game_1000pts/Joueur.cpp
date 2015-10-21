@@ -17,16 +17,24 @@ int Joueur::score(){
 }
 
 Carte* Joueur::getFirstOnDeck(){
-    return tas.back(); //Vérfier que c'est bien le premier élement
+    if (tas.size()>0){
+        return tas.back();
+    }
+    else{
+        Carte* carteNulle = new CartePoint(0, 9999);
+        return carteNulle;
+    }
 }
 
 bool Joueur::estJouable(Carte* carte, Carte* carteAdv){
-    std::string monTypeDeCarte = carte.getType();
-    std::string typeCarteAdv = carteAdv.getType();
+    std::string monTypeDeCarte = carte->getType();
+    std::string typeCarteAdv = carteAdv->getType();
+
+    std::string maPremiereCarte = getFirstOnDeck()->getType();
     //la carte donnée est une carte point
     // et la première carte de mon tas est une point ou une parade
     if (monTypeDeCarte == "Point"){
-        if (getFirstOnDeck() == "point" || getFirstOnDeck() == "P"){
+        if (maPremiereCarte == "Point" || maPremiereCarte == "Parade"){
             return true;
         }
         else{ // et la première carte de mon tas est une attaque
@@ -36,8 +44,8 @@ bool Joueur::estJouable(Carte* carte, Carte* carteAdv){
 
     //La carte donnée est une carte attaque
     // et la première carte du tas de l'adversaire est une point ou une parade
-    if (carte == "A"){
-        if (tasAdv == "point" || tasAdv == "P"){
+    if (monTypeDeCarte == "Attaque"){
+        if (typeCarteAdv == "Point" || typeCarteAdv == "Parade"){
             return true;
         }
         else{ // et la première carte du tas de l'adversaire est une attaque
@@ -46,8 +54,8 @@ bool Joueur::estJouable(Carte* carte, Carte* carteAdv){
     }
     //La carte donnée est une carte parade
     // et la première carte de mon tas est une point ou une parade
-    if (carte == "P"){
-        if (getFirstOnDeck() == "point" || getFirstOnDeck() == "P"){
+    if (monTypeDeCarte == "Parade"){
+        if (maPremiereCarte == "Point" || maPremiereCarte == "Parade"){
             return false;
         }
         else{ // et la première carte de mon tas est une attaque
