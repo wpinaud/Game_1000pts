@@ -35,8 +35,8 @@ int main()
     J1.setMain(lesCartes.distribuer());
     J2.setMain(lesCartes.distribuer());
     //std::fill(mesCartes.begin(), mesCartes.begin()+6, lesCartes.piocher());
-    J1.Joueur::choisirCarte(J2.tas, lesCartes.defausse);
-    //J2.Joueur::choisirCarte(J1.tas, lesCartes.defausse);
+    J1.choisirCarte(J2.tas, lesCartes.defausse);
+    J2.choisirCarte(J1.tas, lesCartes.defausse);
     cout << J1.estJouable(J1.getFirstOnDeck(), J1.getFirstOnDeck());
 
     //for_each(lesCartes.listeCartes.begin(), lesCartes.listeCartes.end(), impr);

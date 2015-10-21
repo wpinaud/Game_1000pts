@@ -8,6 +8,7 @@
 
 #ifndef Joueur_hpp
 #define Joueur_hpp
+#include <algorithm>
 
 #include "CartePoint.h"
 
@@ -26,7 +27,7 @@ public:
 
 protected:
     std::vector<Carte*> main;
-    
+
 };
 
 #endif /* Joueur_hpp */

@@ -2,7 +2,7 @@
 1445408457 source:z:\game_1000pts\game_1000pts\game_1000pts\carte.cpp
 	"Carte.h"
 
-1445411992 z:\game_1000pts\game_1000pts\game_1000pts\carte.h
+1445418047 z:\game_1000pts\game_1000pts\game_1000pts\carte.h
 	<string>
 	<ostream>
 	<stdio.h>
@@ -18,7 +18,8 @@
 	"Carte.h"
 	"Joueur.hpp"
 
-1445413100 z:\game_1000pts\game_1000pts\game_1000pts\joueur.hpp
+1445418068 z:\game_1000pts\game_1000pts\game_1000pts\joueur.hpp
+	<algorithm>
 	"CartePoint.h"
 
 1445408594 source:z:\game_1000pts\game_1000pts\game_1000pts\carteattaque.cpp
@@ -37,23 +38,23 @@
 1445412838 source:z:\game_1000pts\game_1000pts\game_1000pts\cartepoint.cpp
 	"CartePoint.h"
 
-1445412073 z:\game_1000pts\game_1000pts\game_1000pts\cartepoint.h
+1445417208 z:\game_1000pts\game_1000pts\game_1000pts\cartepoint.h
 	"Carte.h"
 	<sstream>
 
-1445412430 source:z:\game_1000pts\game_1000pts\game_1000pts\joueur.cpp
+1445415059 source:z:\game_1000pts\game_1000pts\game_1000pts\joueur.cpp
 	"Joueur.hpp"
 
-1445407588 source:z:\game_1000pts\game_1000pts\game_1000pts\joueurpourrir.cpp
+1445417964 source:z:\game_1000pts\game_1000pts\game_1000pts\joueurpourrir.cpp
 	"JoueurPourrir.hpp"
 
-1445407588 z:\game_1000pts\game_1000pts\game_1000pts\joueurpourrir.hpp
+1445417062 z:\game_1000pts\game_1000pts\game_1000pts\joueurpourrir.hpp
 	"Joueur.hpp"
 
-1445407588 source:z:\game_1000pts\game_1000pts\game_1000pts\joueurstrat.cpp
+1445417208 source:z:\game_1000pts\game_1000pts\game_1000pts\joueurstrat.cpp
 	"JoueurStrat.hpp"
 
-1445407588 z:\game_1000pts\game_1000pts\game_1000pts\joueurstrat.hpp
+1445417208 z:\game_1000pts\game_1000pts\game_1000pts\joueurstrat.hpp
 	"Joueur.hpp"
 
 1445412491 source:z:\game_1000pts\game_1000pts\game_1000pts\main.cpp
@@ -63,7 +64,7 @@
 	<exception>
 	<typeinfo>
 
-1445407588 z:\game_1000pts\game_1000pts\game_1000pts\lescartes.hpp
+1445417208 z:\game_1000pts\game_1000pts\game_1000pts\lescartes.hpp
 	"CartePoint.h"
 	"CarteAttaque.h"
 	"CarteParade.h"
