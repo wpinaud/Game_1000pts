@@ -22,10 +22,11 @@ public:
     Carte* getFirstOnDeck();
     bool estJouable(Carte* carte, Carte* carteAdv);
     void setMain(std::vector<Carte*> cartes){ main = cartes; }
+    std::vector<Carte*> tas;
 
 protected:
     std::vector<Carte*> main;
-    std::vector<Carte*> tas;
+    
 };
 
 #endif /* Joueur_hpp */
